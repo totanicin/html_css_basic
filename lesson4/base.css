@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 1292px;
+  height: 666px;
+  display: flex;
+}
+
+.column {
+  flex-grow: 1; 
+  height: 90vh; 
+  position: relative;
+  border: 1px solid black;
+}
+
+.red { background-color: red; margin-left: 161.5px; margin-top: 1px; margin-bottom: 34px; }
+.blue { background-color: blue; margin-top: 1px; margin-bottom: 34px; }
+.green { background-color: green; margin-right: 161.5px; margin-top: 1px; margin-bottom: 34px; }
+
+.square {
+  width: 55px; 
+  height: 55px; 
+  background-color: white;
+  position: absolute;
+  border: 1px solid black;
+}
+
+/* 各カラム内の四角形の位置調整 */
+.red .square:nth-child(1) { top: 48%; left: 20%; }
+.red .square:nth-child(2) { top: 48%; left: 42%; }
+.red .square:nth-child(3) { top: 48%; left: 64%; }
+
+.blue .square:nth-child(1) { top: 1%; left: 37%; }
+.blue .square:nth-child(2) { top: 1%; left: 59%; }
+.blue .square:nth-child(3) { top: 1%; left: 81%; }
+
+.green .square:nth-child(1) { top: 76%; right: 81%; }
+.green .square:nth-child(2) { top: 84%; right: 81%; }
+.green .square:nth-child(3) { top: 92%; right: 81%; }
